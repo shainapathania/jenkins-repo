@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment{
+		
+		PATH = "/awsvm/buildtool/apache-maven-3.8.6/bin:$PATH"
+	}
 
     stages {
         stage ('Compile Stage') {
